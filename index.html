@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!--google fonts = montserrat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!--nome, ícone e linkagem ao css do site-->
+    <title>mojo dojo casa house</title>
+    <link rel="icon" href="img/casa.png">
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+
+<!--barra de navegação-->
+<header>
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-color-header">
+
+        <!--logo e nome do site-->
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+            <img class="img-fluid" src="img/casa.png" alt="logo">
+            <span>mojo dojo casa house</span>
+            </a>
+
+            <!--botão resumido-->
+            <button type="button" 
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-items"
+            aria-controls="navbar-items"
+            aria-expanded="false"
+            aria-label="toggle navigation">
+            <i class="bi bi-list"></i>
+            </button>
+            
+    
+        <!--menu do site-->
+        <section class="collapse navbar-collapse" id="navbar-items">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item"><a class="nav-link" href="">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="">SOBRE</a></li>
+            <li class="nav-item"><a class="nav-link" href="">PROJETOS</a></li>
+            <li class="nav-item"><a class="nav-link" href="">DICAS</a></li>
+            <li class="nav-item"><a class="nav-link" href="">CONTATOS</a></li>
+        </ul>
+        </section>
+        </section>
+        
+    </nav>
+</header>
+
+<!--slider-->
+<section class="container" id="slider-container">
+    <section class="carousel slide" id="slider" data-bs-interval="8000" data-bs-ride="carousel">
+
+        <!--botões dos slides-->
+        <section class="carousel-indicators">
+            <button 
+            type="button" 
+            class="active"
+            data-bs-target="#slider"
+            data-bs-slide-to="0"
+            aria-current="true"
+            aria-label="slide um"
+            ></button>
+
+            <button 
+            type="button" 
+            data-bs-target="#slider"
+            data-bs-slide-to="1"
+            aria-label="slide dois"
+            ></button>
+
+            <button 
+            type="button" 
+            data-bs-target="#slider"
+            data-bs-slide-to="2"
+            aria-label="slide três"
+            ></button>
+
+            <button 
+            type="button" 
+            data-bs-target="#slider"
+            data-bs-slide-to="3"
+            aria-label="slide quatro"
+            ></button>
+        </section>
+
+        <!--conteúdo do slider-->
+        <section class="carousel-inner">
+            <!--primeiro slide-->
+            <section class="carousel-item active">
+            <img src="img/casaum.png" alt="imagem" class="d-block w-100">
+            <section class="carousel-caption">
+            <h5>miu</h5>
+            <a href="#" class="btn btn-dark">veja mais</a>
+            </section></section>
+
+            <!--segundo slide-->
+            <section class="carousel-item">
+            <img src="img/casadois.png" alt="aaaa" class="d-block w-100">
+            <section class="carousel-caption">
+            <h5>meaw</h5>
+            <a href="#" class="btn btn-dark">veja o gato</a>
+            </section></section>
+
+            <!--terceiro slide-->
+            <section class="carousel-item">
+            <img src="img/casatres.png" alt="imagem" class="d-block w-100">
+            <section class="carousel-caption">
+            <h5>miau</h5>
+            <a href="#" class="btn btn-dark">veja o animal</a>
+            </section></section>
+
+            <!--quarto slide-->
+            <section class="carousel-item">
+            <img src="img/casaquatro.png" alt="imagem" class="d-block w-100">
+            <section class="carousel-caption">
+            <h5>meow</h5>
+            <a href="#" class="btn btn-dark">veja ele</a>
+            </section></section>
+
+        </section>
+
+        <!--botões do slider-->
+        <button 
+        type="button" 
+        class="carousel-control-prev"
+        data-bs-target="#slider" 
+        data-bs-slide="prev">
+        <i class="bi bi-caret-left"></i>
+        </button>
+
+        <button 
+        type="button" 
+        class="carousel-control-next"
+        data-bs-target="#slider" 
+        data-bs-slide="next">
+        <i class="bi bi-caret-right"></i>
+        </button>
+
+    </section>
+</section>
+
+
+
+    <!--banners / cards -->
+    <section class="col-12 col-md-10 offset-md-1" id="mini-banners">
+        <section class="row">
+
+            <!--primeiro card-->
+            <section class="col-12 col-md-3">
+            <section class="card text-center">
+            <i class="bi bi-balloon-heart"></i>
+            <section class="card-body">
+            <h5 class="card-tittle primary color">S O B R E</h5>
+            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn btn-dark">saber mais</a>
+            </section></section></section>
+
+            <!--segundo card-->
+            <section class="col-12 col-md-3">
+            <section class="card text-center">
+            <i class="bi bi-boxes"></i>
+            <section class="card-body">
+            <h5 class="card-tittle primary color">P R O J E T O S</h5>
+            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn btn-dark">saber mais</a>
+            </section></section></section>
+
+            <!--terceiro card-->
+            <section class="col-12 col-md-3">
+            <section class="card text-center">
+            <i class="bi bi-brilliance"></i>
+            <section class="card-body">
+            <h5 class="card-tittle primary color">D I C A S</h5>
+            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn btn-dark">saber mais</a>
+            </section></section></section>
+
+            <!--quarto card-->
+            <section class="col-12 col-md-3">
+            <section class="card text-center">
+            <i class="bi bi-cloud-drizzle-fill"></i>
+            <section class="card-body">
+            <h5 class="card-tittle primary color">C O N T A T O S</h5>
+            <p class="card-text secondary-color">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn btn-dark">saber mais</a>
+            </section></section></section>
+
+
+        </section>
+    </section>
+
+</body>
+
+<!--bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>
