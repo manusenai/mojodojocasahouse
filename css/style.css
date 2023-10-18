@@ -1,0 +1,62 @@
+
+/*fonte do site*/
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*cor de fundo do header*/
+.bg-color-header {
+    background: rgb(237, 224, 213);
+}
+
+/*tamanho do header*/
+.navbar-brand {
+    width: 90px;
+}
+
+/* espaçamento entre os redirecionamentos do header*/
+.nav-item {
+    margin-left: 3.5rem;
+}
+/*espaço entre a header e o slider*/
+#slider-container {
+    margin-top: 10px; 
+}
+
+/*cor e tamanho dos ícones do slider (prev e next)*/
+.carousel-control-next, .carousel-control-prev {
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+/*tamanho e margem dos ícones dos cards*/
+.bi-balloon-heart,
+.bi-boxes,
+.bi-brilliance,
+.bi-cloud-drizzle-fill {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+/*sobreposição dos cards no slider e margem em baixo pra n ficar mt apertado na visualização*/
+#mini-banners .card {
+    margin-top: -100px;
+    margin-bottom: 10rem; 
+}
+
+/*margem entre o texto e o botão principal do slider*/
+.carousel-caption h5,
+.carousel-caption .btn {
+    margin-bottom: 0.5rem; 
+}
+
+/*posição do texto e botão juntos*/
+.carousel-caption {
+    top: 42.5%; 
+}
+
+/*tamanho do texto principal do slider*/
+.carousel-caption h5 {
+    font-size: 2rem; 
+}
