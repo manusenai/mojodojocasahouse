@@ -32,9 +32,9 @@
 
 /*tamanho e margem dos ícones dos cards*/
 .bi-balloon-heart,
-.bi-boxes,
-.bi-brilliance,
-.bi-cloud-drizzle-fill {
+.bi-telephone,
+.bi-person-raised-hand,
+.bi-bookmark-check {
     font-size: 2rem;
     margin-top: 1rem;
 }
@@ -42,7 +42,7 @@
 /*sobreposição dos cards no slider e margem em baixo pra n ficar mt apertado na visualização*/
 #mini-banners .card {
     margin-top: -100px;
-    margin-bottom: 10rem; 
+    margin-bottom: 3rem; 
 }
 
 /*margem entre o texto e o botão principal do slider*/
@@ -59,4 +59,162 @@
 /*tamanho do texto principal do slider*/
 .carousel-caption h5 {
     font-size: 2rem; 
+}
+
+/*imagem dos projetos*/
+.cardfoto {
+    position: relative;
+    transition: all 0.3s;
+    border: none;
+}
+
+/*imagem dos projetos depois de passar o mouse*/
+.cardfoto::before {
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/*hover das imagens do projeto (visibilidade)*/
+.cardfoto:hover::before {
+    opacity: 0.5; 
+}
+
+/*escrita central da imagem depois de passar o mouse*/
+.cardfoto h4,
+.cardfoto p {
+    color: #000; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/*hover da escrita central da imagem (visibilidade)*/
+.cardfoto:hover h4,
+.cardfoto:hover p {
+    opacity: 1;
+}
+
+
+.gatinhomodal {
+    height: 10rem;
+    margin-top: 1rem;
+    margin-left: -2rem;
+}
+
+.info-content {
+    margin-bottom: 4em;
+    padding: 4em 1em;
+  }
+  
+  .info-numbers {
+    margin: 1.5em 0;
+  }
+  
+  .info-banner {
+    align-items: center;
+    display: flex;
+    margin-bottom: 2.5em;
+  }
+  
+  #info-numbers h3 {
+    font-size: 3em;
+  }
+  
+  @media (min-width: 768px) {
+    #info-content {
+      padding: 3.5em;
+    }
+  }
+  
+  /* FOOTER TOP */
+  #footer {
+    padding: 3em 2em;
+    background-color:rgb(237, 224, 213);
+  }
+  
+  #footer-top {
+    margin-bottom: 2em;
+  }
+  
+  #footer-top,
+  #footer-top i {
+    color: #fff;
+  }
+  
+  #social-icons {
+    text-align: right;
+  }
+  
+  #social-icons i {
+    margin-right: 1em;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  #social-icons i:hover {
+    color: #7a7a7a;
+  }
+  
+  /* FOOTER DETAILS */
+  #footer-details {
+    margin-bottom: 3em;
+  }
+  
+  #news-container,
+  #contact-container,
+  #links-container {
+    padding: 0;
+    border: 0;
+    margin-bottom: 2em;
+  }
+  
+  #footer-details h4 {
+    color: #fff;
+    margin-bottom: 1.5em;
+  }
+  
+  #news-container input {
+    border-radius: 0;
+    border: none;
+  }
+  
+  #links-container li {
+    margin-bottom: 0.5em;
+  }
+  
+  #links-container a {
+    text-decoration: none;
+  }
+  
+  #links-container a:hover {
+    color: #fff;
+  }
+
+
+.footertitulo {
+    color: #000;
+  }
+#forms {
+  margin-top: -14rem;
+  color: #000;
+}
+
+.bi {
+  color: black;
+}
+
+.contatos{
+  margin-top: 2rem;
 }
